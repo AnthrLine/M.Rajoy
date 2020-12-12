@@ -6,7 +6,7 @@ import os
 import time
 
 # Variables
-TOKEN = 'NzYxNTc0MjczNDk5OTIyNDcy.X3clUA.TzS5LRlLLQL3-Jt2vlOt9rNzx2w'
+TOKEN = 'NzYxNTc0MjczNDk5OTIyNDcy.X3clUA.2WZlpmemnBVv9fOuNNj41On9qzY'
 
 # Crear el bot
 client = commands.Bot(command_prefix='!')
