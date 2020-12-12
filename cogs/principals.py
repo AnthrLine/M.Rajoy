@@ -5,6 +5,8 @@ import time
 import os
 from itertools import cycle
 
+role = os.getenv('SECRET_ROLE')
+
 class principals(commands.Cog):
 
 
@@ -24,9 +26,10 @@ class principals(commands.Cog):
 	async def vota(self, ctx):
 		await ctx.send('¡Gracias por querer votar! :heart: Nuestro equipo te lo agradece! Puedes votar en este link: https://bit.ly/votaRajoy')
 
-#	@commands.command()
-#	async def devol_stop(self, ctx):
-#		sys.exit(await ctx.send('Capullos'))
+	@commands.command()
+	@commands.has_role(role)
+	async def devol_stop(self, ctx):
+		sys.exit(await ctx.send('Capullos'))
 
 	@commands.command(pass_context=True)
 	async def ping(self, ctx):

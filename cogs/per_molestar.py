@@ -9,14 +9,6 @@ class molestar(commands.Cog):
 	def __init__(self, client):
 		self.client = client
 
-#	@commands.command()
-#	async def Jan(self, ctx):
-#		await ctx.send(':rat:')
-
-	@commands.command()
-	async def helloworld(self, ctx):
-		await ctx.send('Hello World!')
-
 	@commands.command()
 	async def tula(self, ctx):
 		mida = ''
@@ -35,13 +27,5 @@ class molestar(commands.Cog):
 	async def mira_que_tengo(self, ctx):
 		await ctx.send(':ok_hand:')
 
-#	@commands.command()
-#	async def xd(self, ctx):
-#		i = 1000
-#		while i >= 0:
-#			await ctx.send("xd")
-#			i -= 1
-
-#@commands.command()   PER COMANDOS
 def setup(client):
 	client.add_cog(molestar(client))
