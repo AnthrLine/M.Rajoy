@@ -4,10 +4,10 @@ import discord
 from discord.ext import commands
 import os
 import time
+import dotenv
 
 # Variables
-TOKEN = 'NzYxNTc0MjczNDk5OTIyNDcy.X3clUA.2WZlpmemnBVv9fOuNNj41On9qzY'
-
+TOKEN = os.getenv('DISCORD_BOT_SECRET')
 # Crear el bot
 client = commands.Bot(command_prefix='!')
 
