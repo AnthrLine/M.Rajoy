@@ -6,7 +6,18 @@ Además, si sabes programar el bot está 100% escrito en python con la librería
 
 ## ¿Qué hace?
 
-`In creation process`
+Los comandos que tiene M. Rajoy són:
+ - !frase
+ - !tula
+ - !chiste
+ - !vota
+ - !mira_que_tengo
+ - !limpiar
+ - !expulsa
+ - !ping
+ - !help
+
+Si quieres más comandos, nos los puedes proponer en github o en discord bot list.
 
 ## ¿Quieres añadir M.Rajoy a tu discord?
 
