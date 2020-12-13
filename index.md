@@ -12,6 +12,6 @@ Además, si sabes programar el bot está 100% escrito en python con la librería
 
 Si te está gustando la idea de M.Rajoy lo puedes [Añadir al servidor haciendo click aquí](https://discord.com/api/oauth2/authorize?client_id=761574273499922472&permissions=8&scope=bot). ¡Es gratis!
 
-## ¿Quieres ayidar al equipo?
+## ¿Quieres ayudar al equipo?
 
 Si quieres ayudar a nuestro equipo, siempre puedes dejar un [comentario o votar a M.Rajoy en Discord Bot List](https://top.gg/bot/761574273499922472).
