@@ -19,10 +19,6 @@ class principals(commands.Cog):
 		print('Mariano online! El suyo beneficio!')
 
 	@commands.command()
-	async def comandos(self, ctx):
-		await ctx.send('!comandos, !expulsa (usuario) (motivo) (Sólo para administradores), !frase, !chiste, !limpiar [] (Sólo para rol MOD), !vota')
-
-	@commands.command()
 	async def vota(self, ctx):
 		await ctx.send('¡Gracias por querer votar! :heart: Nuestro equipo te lo agradece! Puedes votar en este link: https://bit.ly/votaRajoy')
 
