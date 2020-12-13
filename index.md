@@ -6,7 +6,7 @@ Además, si sabes programar el bot está 100% escrito en python con la librería
 
 ## ¿Qué hace?
 
-Los comandos que tiene M. Rajoy són:
+Los comandos que tiene M. Rajoy son:
  - !frase
  - !tula
  - !chiste
