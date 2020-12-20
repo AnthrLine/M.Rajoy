@@ -4,6 +4,7 @@ import discord
 from discord.ext import commands
 import os
 import time
+import random
 import dotenv
 
 #Variables
@@ -29,7 +30,6 @@ async def carga(ctx, extension):
 async def descarga(ctx, extension):
 	client.unload_extension(f'cogs.{extension}')
 	await ctx.send('Extensión: ' + extension + ' descargada con éxito.')
-
 
 # Fer que furuli
 client.run(TOKEN)
