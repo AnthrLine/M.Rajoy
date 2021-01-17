@@ -16,6 +16,9 @@ Los comandos que tiene M. Rajoy son:
  - !expulsa
  - !ping
  - !help
+ - !mensaje
+ - !leermensaje
+ - !comandos
 
 Si quieres más comandos, nos los puedes proponer en github o en discord bot list.
 
