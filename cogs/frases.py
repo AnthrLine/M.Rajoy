@@ -16,27 +16,31 @@ class frases(commands.Cog):
 		else:
 			ok = ':white_check_mark: FRASE AFEGIDA AMB ÈXIT :white_check_mark:'
 			# Obre el fitxer
-			file_object = open('frases.txt', 'a')
+			f = open('frases.txt', 'a')
 			# Afegeix la frase
-			file_object.write('\n' + frase)
+			f.write('\n' + frase)
 			# Tanca i envia la confirmació
-			file_object.close()
+			f.close()
 			await ctx.send(ok)
 			print('S\'ha afegit la frase ' + frase)
 
 	@commands.command()
 	async def frase(self, ctx):
-		file1 = open('frases.txt', 'r') 
-		Lines = file1.readlines()
-		file1.close()
+		f = open('frases.txt', 'r') 
+		Frases = f.readlines()
+		f.close()
  
 		c = '_'
 		symbol = ' '
-		random.shuffle(Lines)
-		Chis = (Lines[0])
-		modified_str = Chis.replace(c,symbol)
+		random.shuffle(Frases)
+		Frasef = (Frases[0])
+		Fraseenviar = Frasef.replace(c,symbol)
 
-		await ctx.send(modified_str)
+		embed = discord.Embed(title="Frase", colour=discord.Colour(0x42ff68))
+
+		embed.add_field(name='Su frase es:', value=f'{Fraseenviar}')
+
+		await ctx.send(embed=embed)
 		print('S\'ha executat frase')
 
 

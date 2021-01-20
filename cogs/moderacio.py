@@ -21,7 +21,12 @@ class principals(commands.Cog):
 	@commands.has_permissions(administrator=True)
 	async def expulsa(self, ctx, member: discord.Member, *, why=None):
 		await member.kick(reason=why)
-		await ctx.channel.send(f"**{member} ha sido expulsado por {ctx.author}**")
+
+		embed = discord.Embed(title="Expulsión", colour=discord.Colour(0x42ff68))
+
+		embed.add_field(name='Detalles de la expulsión:', value=f'**{member} ha sido expulsado por {ctx.author}**')
+
+		await ctx.channel.send(embed=embed)
 
 def setup(client):
 	client.add_cog(principals(client))

@@ -9,20 +9,18 @@ class molestar(commands.Cog):
 	def __init__(self, client):
 		self.client = client
 
+	
+
 	@commands.command()
 	async def tula(self, ctx):
-		mida = ''
-		message = await ctx.send('Calculando tula... Espere')
+		await ctx.send('Calculando tula... Espere')
 		time.sleep(2)
-		mida = random.randint(0, 100)
-		midab = mida + .00
-		if mida == 0:
-			await message.edit(content=f"Calculando tula... Espere  `La tula de {ctx.author} mide 0cm, ¡inexistente!`")
-		elif midab >= 0.00 and midab <= 7.00:
-			await message.edit(content=f"Calculando tula... Espere  `Tu tula mide {mida}cm, ¡microtula!`")
-		else:
-			await message.edit(content=f"Calculando tula... Espere  `Tu tula mide {mida}cm, ¡buena tula!`")
-		print(ctx.author, 'tiene una tula de', mida, 'cm')
+		mida = tulam()
+		embed = discord.Embed(title="Expulsión", colour=discord.Colour(0x42ff68))
+
+		embed.add_field(name='Tula', value=f'Tu tula mide {mida}cm, ¡espectacular!')
+
+		await ctx.send(embed=embed)
 
 	@commands.command()
 	async def mira_que_tengo(self, ctx):
@@ -30,3 +28,18 @@ class molestar(commands.Cog):
 
 def setup(client):
 	client.add_cog(molestar(client))
+
+def tulam():
+	probabilitat = random.randint(0,25)
+	if probabilitat == 0 or probabilitat == 4 or probabilitat == 5:
+		mida = random.randint(9, 99)
+		return(mida)
+	elif probabilitat == 1:
+		mida1 = 0
+		return(mida1)
+	elif probabilitat == 2:
+		mida2 = 100
+		return(mida2)
+	else:
+		midae = random.randint(1, 8)
+		return(midae)
