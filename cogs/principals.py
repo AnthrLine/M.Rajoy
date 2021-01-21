@@ -49,6 +49,7 @@ class principals(commands.Cog):
 
 	@commands.command()
 	async def comandos(self, ctx):
+		usr = ctx.author
 		embed = discord.Embed(title="Lista de comandos de M. Rajoy", colour=discord.Colour(0x42ff68))
 
 		embed.add_field(name='Limpiar:',value=f'`!limpiar` o `!limpiar <Cantidad de mensajes>` se necesita gestionar canales.', inline=False),
@@ -73,7 +74,8 @@ class principals(commands.Cog):
 
 		embed.add_field(name='Encuesta (comprobar ganador)', value=f'`!comprobar_ganador <Id encuesta>` se necesita gestionar canales.', inline=False)
 
-		await ctx.send(embed=embed)
+		await usr.send(embed=embed)
+		await ctx.send(f'Md enviado! {ctx.author}')
 
 def setup(client):
 	client.add_cog(principals(client))

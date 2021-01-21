@@ -16,7 +16,7 @@ class molestar(commands.Cog):
 		await ctx.send('Calculando tula... Espere')
 		time.sleep(2)
 		mida = tulam()
-		embed = discord.Embed(title="Expulsión", colour=discord.Colour(0x42ff68))
+		embed = discord.Embed(title="Tula", colour=discord.Colour(0x42ff68))
 
 		embed.add_field(name='Tula', value=f'Tu tula mide {mida}cm, ¡espectacular!')
 
