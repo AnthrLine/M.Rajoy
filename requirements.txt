@@ -1,1 +1,3 @@
-flask
+discord
+environ
+python-dotenv
