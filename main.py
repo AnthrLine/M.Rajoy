@@ -1,5 +1,4 @@
 #Imports
-from webserver import al
 import discord
 from discord.ext import commands
 import os
@@ -33,6 +32,3 @@ async def descarga(ctx, extension):
 
 #Engegar el bot
 client.run(TOKEN)
-
-#Webserver
-al.keepalive()
