@@ -2,3 +2,4 @@ discord
 environ
 python-dotenv
 topggpy
+dblpy
