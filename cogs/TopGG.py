@@ -4,7 +4,7 @@ from discord.ext import commands
 import os
 
 
-DBLTOKEN = os.environ['dbl']
+DBLTOKEN = os.getenv('dbl')
 
 class TopGG(commands.Cog):
     """Handles interactions with the top.gg API"""
