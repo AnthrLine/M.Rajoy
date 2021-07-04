@@ -74,6 +74,10 @@ class principals(commands.Cog):
 
 		embed.add_field(name='Encuesta (comprobar ganador)', value=f'`!comprobar_ganador <Id encuesta>` se necesita gestionar canales.', inline=False)
 
+		embed.add_field(name='Mutear', value=f'`!mutear <@usuario> <Rol de muteo>` se necesita gestionar canales. Se necesita un rol de muteo.', inline=False)
+
+		embed.add_field(name='Desmutear', value=f'`!desmutear <@usuario> <Rol de muteo>` se necesita gestionar canales. Se necesita un rol de muteo.', inline=False)
+
 		await usr.send(embed=embed)
 		await ctx.send(f'Md enviado! {ctx.author}')
 
